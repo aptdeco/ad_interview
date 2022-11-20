@@ -1,14 +1,20 @@
 # AdInterview
+## Steps to start the project
 
-To start your Phoenix server:
+Manually kicking off the project
+1. cd .devcontainer/
+2. docker compose up -d
+3. docker ps
+4. docker exec -it <container_id> bash
+5. cd app
+6. Run the shell script(scripts/init-local.sh) or each command in the shell script manually
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+Using VS code devcontainer
+1. Click Fn + F1 on Mac to open command pallet.
+2. Enter “rebuild and reopen in container” into the input bar.
+3. Press enter.
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
 
