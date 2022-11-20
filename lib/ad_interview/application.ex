@@ -9,8 +9,6 @@ defmodule AdInterview.Application do
     children = [
       # Start the Ecto repository
       AdInterview.Repo,
-      # Start the Telemetry supervisor
-      AdInterviewWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: AdInterview.PubSub},
       # Start the Endpoint (http/https)
