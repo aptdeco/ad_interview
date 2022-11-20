@@ -1,0 +1,14 @@
+{
+  "name": "Aptdeco Interview",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app",
+  "forwardPorts": [4000],
+  "shutdownAction": "stopCompose",
+  "extensions": [
+      "mjmcloug.vscode-elixir",
+      "jakebecker.elixir-ls",
+      "florinpatrascu.vscode-elixir-snippets"
+  ],
+  "postCreateCommand": "./scripts/init-local.sh"
+}
