@@ -2,6 +2,7 @@
 version: '3'
 services:
   app:
+    container_name: vscode_remote_ad_interview
     build:
       context: ../
       dockerfile: .devcontainer/Dockerfile
@@ -24,7 +25,8 @@ services:
       - db
 
   db:
-    image: postgres:12
+    container_name: vscode_remote_ad_interview_psql
+    image: postgres
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres

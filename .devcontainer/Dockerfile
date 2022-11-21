@@ -1,6 +1,6 @@
-FROM elixir:1.14.2
+FROM elixir:latest
 
-RUN apt update \
+RUN apt-get update \
   && apt-get install -y ruby npm postgresql-client\
   && npm i -g yarn \
   && apt-get autoremove -y \
