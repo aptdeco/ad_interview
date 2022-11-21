@@ -7,6 +7,4 @@ echo -e "\n======= \033[1;32mmix ecto.create\e[0m =======\n" &&\
 echo -e "\n======= \033[1;32mmix ecto.load\e[0m =======\n" &&\
   mix ecto.load -r AdInterview.Repo --quiet --skip-if-loaded &&\
 echo -e "\n======= \033[1;32mmix ecto.migrate\e[0m =======\n" &&\
-  mix ecto.migrate -r AdInterview.Repo  &&\
-echo -e "\n======= \033[1;32mmix emporos.seeds\e[0m =======\n" &&\
-  mix emporos.seeds
+  mix ecto.migrate -r AdInterview.Repo

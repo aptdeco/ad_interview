@@ -10,5 +10,6 @@
       "jakebecker.elixir-ls",
       "florinpatrascu.vscode-elixir-snippets"
   ],
+  "updateContentCommand": "chmod +x ./scripts/init-local.sh",
   "postCreateCommand": "./scripts/init-local.sh"
 }
