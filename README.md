@@ -1,4 +1,9 @@
 # AdInterview
+
+## Recommended
+Installing latest version of elixir on your machine
+https://elixir-lang.org/install.html
+
 ## Steps to start the project
 
 Manually kicking off the project
@@ -20,7 +25,6 @@ Using VS code devcontainer
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Learn more
-
   * Official website: https://www.phoenixframework.org/
   * Guides: https://hexdocs.pm/phoenix/overview.html
   * Docs: https://hexdocs.pm/phoenix
