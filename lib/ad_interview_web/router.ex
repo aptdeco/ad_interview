@@ -15,5 +15,9 @@ defmodule AdInterviewWeb.Router do
     pipe_through :api
 
     get "/", ApiHomeController, :index
+
+    post "/addresses", AddressController, :create
+
+    get "/products/:id", ProductController, :show
   end
 end
