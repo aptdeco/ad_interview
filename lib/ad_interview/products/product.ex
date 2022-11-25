@@ -1,36 +1,30 @@
 defmodule AdInterview.Products.Product do
   use Ecto.Schema
   import Ecto.Changeset
+  alias AdInterview.Accounts.Address
 
   @required_fields [:title]
   @optional_fields [
     :description,
     :image_url,
+    :price,
     :height,
     :width,
-    :depth,
-    :price,
-    :description,
-    :image_url,
-    :height,
-    :width,
-    :depth,
-    :price,
-    :bank_id
+    :depth
   ]
 
   @derive {Jason.Encoder,
            only: [:depth, :description, :height, :image_url, :price, :title, :width]}
   schema "products" do
-    field :bank_id, :string
-    field :depth, :decimal
+    field :title, :string
     field :description, :string
-    field :height, :decimal
     field :image_url, :string
     field :price, :decimal
-    field :title, :string
+    field :height, :decimal
     field :width, :decimal
-    field :address_id, :id
+    field :depth, :decimal
+
+    belongs_to(:address, Address)
 
     timestamps()
   end

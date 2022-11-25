@@ -8,3 +8,5 @@ echo -e "\n======= \033[1;32mmix ecto.load\e[0m =======\n" &&\
   mix ecto.load -r AdInterview.Repo --quiet --skip-if-loaded &&\
 echo -e "\n======= \033[1;32mmix ecto.migrate\e[0m =======\n" &&\
   mix ecto.migrate -r AdInterview.Repo
+echo -e "\n======= \033[1;32mmix ad_interview.seeds\e[0m =======\n" &&\
+  mix ad_interview.seeds
